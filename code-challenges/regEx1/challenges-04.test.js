@@ -83,7 +83,7 @@ Do not use the vertical bar (pipe) in your pattern.
 
 
 const matchMonth = (input) => {
-  let regex = /\b^[Oo]ct(?:ober)?\b/;
+  let regex = /\b[Oo]ct(?:ober)?\b/;
   let y = regex.test(input);
   // console.log(input,y);
   return y;
