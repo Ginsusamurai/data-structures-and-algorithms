@@ -343,3 +343,5 @@ describe('Testing challenge 8', () => {
     expect(result[2]).toStrictEqual(27);
   });
 });
+
+
