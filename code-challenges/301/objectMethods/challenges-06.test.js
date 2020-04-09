@@ -207,7 +207,7 @@ const houseSurvivors = (arr) => {
       counter += 1;
     }
 
-    console.log(!deceasedSpouses.includes(obj.name), !deceasedSpouses.includes(obj.spouse), counter);
+    // console.log(!deceasedSpouses.includes(obj.name), !deceasedSpouses.includes(obj.spouse), counter);
     if(obj.children.length > 0 && obj.children !== null){
       obj.children.forEach( kid => {
         if(!deceasedSpouses.includes(kid)){

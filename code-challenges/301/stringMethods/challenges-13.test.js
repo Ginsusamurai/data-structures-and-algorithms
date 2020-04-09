@@ -125,14 +125,19 @@ For example, [['Brook Testing', 'Actual Person'], ['Human Person', 'Brook again'
 ------------------------------------------------------------------------------------------------ */
 
 const unenrollBrook = (arr) => {
+  // console.log(typeof arr[1][1]);
   for(let x = 0; x < arr.length; x++){
     for(let y = 0; y < arr[x].length; y++){
-      if(arr[x][y].includes("Brook")){
-        arr[x].splice(y);
+      // console.log(arr[x][y], typeof arr[x][y]);
+      if(arr[x][y].includes('Brook')){
+        arr[x].splice(y,y + 1);
+        x = 0;
+        y = 0;
       }
     }
   }
-  console.log(arr);
+
+  // console.log(arr);
   return arr;
 };
 
@@ -161,7 +166,47 @@ const daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Sat
 
 const sortByDay = (arr) => {
   // Solution code here...
+  const daAnswer = [];
+
+  for(let i = 0; i < daysOfWeek.length; i++){
+    daAnswer.push([]);
+  }
+
+  // console.log(daAnswer);
+  arr.forEach( val => {
+    if(val.includes('Monday')){
+      daAnswer[0].push(val);
+    }
+    if(val.includes('Tuesday')){
+      daAnswer[1].push(val);
+    }
+    if(val.includes('Wednesday')){
+      daAnswer[2].push(val);
+    }
+    if(val.includes('Thursday')){
+      daAnswer[3].push(val);
+    }
+    if(val.includes('Friday')){
+      daAnswer[4].push(val);
+    }
+    if(val.includes('Saturday')){
+      daAnswer[5].push(val);
+    }
+    if(val.includes('Sunday')){
+      daAnswer[6].push(val);
+    }
+  });
+
+  return daAnswer;
 };
+
+/*
+['Dancing on Mondays and Tuesdays', 
+'Meet the inventors! Monday, August 7', 
+'in the club on a Tuesday', 
+'Thursday Night Code', 
+'Saturday Night Fever'];
+*/
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 10 - Stretch Goal
@@ -173,6 +218,11 @@ For example, ['abcd', 'efgh', 'ijkl', 'mnop'] returns ['a', 'f', 'k', 'p']
 
 const characterByIndex = (arr) => {
   // Solution code here...
+  let x = arr.reduce((total,val,ind,array) => {
+    total.push(val.charAt(ind));
+    return total;
+  }, []);
+  return x;
 };
 
 /* ------------------------------------------------------------------------------------------------
