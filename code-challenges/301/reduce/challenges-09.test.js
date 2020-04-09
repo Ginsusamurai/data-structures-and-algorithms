@@ -254,17 +254,23 @@ Write a function named extractChildren that, given the array of characters from 
 
 const extractChildren = (arr) => {
 
-  console.log(arr);
-  let regex = /a/i;
-  let names = arr.children.filter( kidsArray => {
-    (kidsArray != null && kidsArray.test(regex));
-  });
+  return arr.reduce((total, cur) => {
+    let regex = /a/;
 
-  console.log(names);
-  // return arr.reduce((acc, val, ind, array) => {
-
-  // },[]);
+    if(cur.name.match(regex)){
+      if(cur.children){
+        cur.children.forEach( val => {
+          if(!total.includes(val)){
+            total.push(val);
+          }
+        });
+      }
+    }
+    return total;
+  }, []);
 };
+
+
 
 /* ------------------------------------------------------------------------------------------------
 TESTS

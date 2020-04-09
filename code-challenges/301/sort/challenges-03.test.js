@@ -168,17 +168,19 @@ If two people have the same full name, the younger one should come first. Do not
 
 
 const sortPeopleBetter = (arr) => {
-  arr.sort((a,b)=>{
+
+  arr.sort((a,b) => {
+
     let alast = a.lastName.toLowerCase();
     let afirst = a.firstName.toLowerCase();
     let blast = b.lastName.toLowerCase();
     let bfirst = b.firstName.toLowerCase();
 
     if( (alast === blast) && (afirst === bfirst)){
-      return a.age - b.age;
+      return parseInt(a.age) - parseInt(b.age);
     }
 
-    if( alast === blast ){
+    if( (alast === blast) && (afirst !== bfirst)){
       if (afirst < bfirst){
         return -1;
       }else if(afirst > bfirst){
@@ -188,19 +190,34 @@ const sortPeopleBetter = (arr) => {
       }
     }
 
-    if(alast > blast){
-      return 1;
-    }else if(alast < bfirst){
+    if(alast < blast){
       return -1;
+    }else if(alast > bfirst){
+      return 1;
     }else{
       return 0;
     }
 
 
   });
-  // console.log(arr);
   return arr;
 };
+
+// test('It should sort people with more strict ordering', () => {
+//   const family = [
+//     new Person('Casey', 'Codefellows', 55),
+//     new Person('Casey', 'Codefellows', 37),
+//     new Person('Charlie', 'Codefellows', 21),
+//     new Person('Charles', 'Codefellows', 29),
+//     new Person('Carol', 'Codefellow', 88),
+//   ];
+//   expect(sortPeopleBetter(family)).toStrictEqual([
+//     new Person('Carol', 'Codefellow', 88),
+//     new Person('Casey', 'Codefellows', 37),
+//     new Person('Casey', 'Codefellows', 55),
+//     new Person('Charles', 'Codefellows', 29),
+//     new Person('Charlie', 'Codefellows', 21),
+//   ]);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 9 - Stretch Goal
@@ -277,7 +294,6 @@ const sortSchedule = (arr) => {
     }
 
   });
-  console.log(arr);
   return arr;
 };
 
