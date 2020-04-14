@@ -29,4 +29,5 @@
 
 ## Solution
 
+[code][/array-shift.js]
 ![white board](/assets/array-shift.jpg)
