@@ -23,4 +23,4 @@ alt-approach
 
 ## solution whiteboard image
 
-![arrayReverse visual]("https://github.com/Ginsusamurai/data-structures-and-algorithms/blob/master/code-challenges/401/arrayReverse/assets/arrayReversev2.jpg);
+![arrayReverse visual]("https://github.com/Ginsusamurai/data-structures-and-algorithms/blob/master/code-challenges/401/arrayReverse/assets/arrayReversev2.jpg");
