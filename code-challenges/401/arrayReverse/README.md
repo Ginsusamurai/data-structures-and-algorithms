@@ -23,4 +23,4 @@ alt-approach
 
 ## solution whiteboard image
 
-![arrayReverse visual]('./assets/arrayReversev2.jpg');
+![arrayReverse visual]('/assets/arrayReversev2.jpg');
