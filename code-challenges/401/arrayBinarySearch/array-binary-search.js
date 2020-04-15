@@ -4,11 +4,14 @@ const { PerformanceObserver, performance } = require('perf_hooks');
 
 
 function arrayBinarySearch(arr,key){
+  if(typeof key === 'string'){
+    throw new Error ('invalid key type');
+  }
+  //establish inital benchmarks
   let L = 0;
   let R = arr.length - 1;
-  let M = 0;
   do{
-    M = Math.floor((L + R) / 2);
+    let M = Math.floor((L + R) / 2);
     // console.log('l', L, 'r', R, 'M', M);
     if(arr[M] === key){
       return M;
