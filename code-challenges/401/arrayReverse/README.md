@@ -22,5 +22,6 @@ alt-approach
 * it seems that array.reverse() both returns an array AND alters in place. If not controlled VERY strictly this can cause VERY strange behavior and polute the data sets further down the program.
 
 ## solution whiteboard image
-
 ![arrayReverse visual](https://github.com/Ginsusamurai/data-structures-and-algorithms/tree/master/code-challenges/401/arrayReverse/assets/array-reverse.jpg);
+
+
