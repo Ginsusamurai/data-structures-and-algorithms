@@ -10,7 +10,8 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "dependencies": {
-    "jest": "^24.1.0"
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^24.9.0"
   }
 }

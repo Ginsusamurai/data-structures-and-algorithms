@@ -1,0 +1,18 @@
+{
+  "name": "arrayBinarySearch",
+  "version": "1.0.0",
+  "description": "Create a function that takes in 2 parameters (sorted array and search key) and returns the index of the element that matches the search key OR -1 if not present using a binary search algorithm.",
+  "main": "array-binary-search.js",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^25.3.0"
+  },
+  "dependencies": {
+    "performance": "^1.4.0"
+  }
+}
