@@ -1,0 +1,19 @@
+{
+  "name": "linkedList",
+  "version": "1.0.0",
+  "description": "- Create a function that takes an array and a value - return an array with the value added to the middle - do not use built-in functions",
+  "main": "linked-list.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest --verbose --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^25.3.0"
+  }
+}
