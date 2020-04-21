@@ -35,3 +35,5 @@
 - `removeNode(val)` will remove a node with the indicated val
 
 [PR](https://github.com/Ginsusamurai/data-structures-and-algorithms/pull/26)
+
+[linked list notes](/assets/linkedListInserts.jpg)
