@@ -8,6 +8,64 @@ class LinkedList {
     this.head = null;
   }
 
+  // add a new node with `newVal` before the first
+  // node that matches the `value`
+  // how-to: find the node.next.val that matches
+  // save copy of current node to a _temp
+  // set the current.next to value of new node made
+  // set the new node next to _temp
+  insertBefore(value, newVal){
+
+    if(this.includes(value)){
+
+      let newNode = new Node(newVal);
+
+      let currentNode = this.head;
+      while(currentNode.next.value !== value){
+        currentNode = currentNode.next;
+      }
+      let holderNext = currentNode.next;
+      currentNode.next = newNode;
+      newNode.next = holderNext;
+    }else{
+      throw new Error('Value not in list');
+    }
+
+  }
+
+  // remove a node with the matching value from the list
+  removeNode(value){
+    if(this.includes(value)){
+
+      let currentNode = this.head;
+      while(currentNode.next.value !== value){
+        currentNode = currentNode.next;
+      }
+      currentNode.next = currentNode.next.next;
+    }else{
+      throw new Error('Value not in list');
+    }
+  }
+
+  // add a new node with the given `newVal`
+  // after the first node that matches `value`
+  insertAfter(value, newVal){
+
+    if(this.includes(value)){
+
+      let newNode = new Node(newVal);
+      let currentNode = this.head;
+      while(currentNode.value !== value){
+        currentNode = currentNode.next;
+      }
+      let holderNext = currentNode.next;
+      currentNode.next = newNode;
+      newNode.next = holderNext;
+    }else{
+      throw new Error('Value not in list');
+    }
+  }
+
   // add node to end of list
   append(value) {
     let node = new Node(value);

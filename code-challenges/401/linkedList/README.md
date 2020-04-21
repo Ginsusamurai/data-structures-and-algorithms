@@ -30,5 +30,8 @@
 - `includes(val)` will return false if no head, traverse list and return true if val is found, false if next node is NULL
 - `toString()` returns a string of the array values formatted as indicated
 - `append(val)` will add a new node at the end of the list
+- `insertBefore(val, newVal)` will add a new node before the indicated val
+- `insertAfter(val, newVal)` will add a new node after the indicated val
+- `removeNode(val)` will remove a node with the indicated val
 
 [PR](https://github.com/Ginsusamurai/data-structures-and-algorithms/pull/26)

@@ -71,5 +71,73 @@ describe('Linked List module', () => {
     expect(list.head.value).toEqual('test');
   });
 
+  it('should insert a node before the called instance with `insertBefore`', () => {
+    let list = new LL();
+    list.append(0);
+    list.append(1);
+    list.append(2);
+    list.append(3);
+    list.insertBefore(2,'dog');
+    expect(list.toString()).toEqual('{0} -> {1} -> {dog} -> {2} -> {3} -> NULL');
+  });
+
+  it('should insert a node before the called instance with `insertAfter`', () => {
+    let list = new LL();
+    list.append(0);
+    list.append(1);
+    list.append(2);
+    list.append(3);
+    list.insertAfter(2,'dog');
+    expect(list.toString()).toEqual('{0} -> {1} -> {2} -> {dog} -> {3} -> NULL');
+  });
+
+  it('should remove a node if the `val` matches - removeNode', () => {
+    let list = new LL();
+    list.append(0);
+    list.append(1);
+    list.append(2);
+    list.append(3);
+    list.removeNode(2);
+    expect(list.toString()).toEqual('{0} -> {1} -> {3} -> NULL');
+  });
+});
+
+describe('Exceptions errors', () => {
+  it('will throw an exception if value not in list - insertBefore', () => {
+    let list = new LL();
+    list.append(0);
+    list.append(1);
+    list.append(2);
+    list.append(3);
+    const anError = () =>{
+      list.insertBefore(4,'dog');
+    };
+    expect(anError).toThrow('Value not in list');
+  });
+
+  it('will throw an exception if value not in list - insertAfter', () => {
+    let list = new LL();
+    list.append(0);
+    list.append(1);
+    list.append(2);
+    list.append(3);
+    const anError = () =>{
+      list.insertAfter(4,'dog');
+    };
+    expect(anError).toThrow('Value not in list');
+  });
+
+  it('will throw an exception if value not in list - removeNode', () => {
+    let list = new LL();
+    list.append(0);
+    list.append(1);
+    list.append(2);
+    list.append(3);
+    const anError = () =>{
+      list.removeNode(5);
+    };
+    expect(anError).toThrow('Value not in list');
+  });
+
 
 });
