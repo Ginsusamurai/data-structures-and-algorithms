@@ -139,5 +139,73 @@ describe('Exceptions errors', () => {
     expect(anError).toThrow('Value not in list');
   });
 
+  it('will return the value of the linked list kthFromEnd()', () =>{
+    let list = new LL();
+    list.append(0);
+    expect(list.kthFromEnd(0)).toEqual(0);
+    list.append(1);
+    list.append(2);
+    list.append(3);
+    list.append(4);
+    list.append(5);
+    expect(list.kthFromEnd(2)).toEqual(3);
+    expect(list.kthFromEnd(0)).toEqual(5);
+    expect(list.kthFromEnd(5)).toEqual(0);
+  });
 
+  it('will throw an exception if K is longer than list - kthFromEnd()', () => {
+    let list = new LL();
+    list.append(0);
+    list.append(1);
+    list.append(2);
+    list.append(3);
+    const anError = () =>{
+      list.kthFromEnd(5);
+    };
+    expect(anError).toThrow('k is longer than list');
+  });
+
+  it('will throw an exception if K not positive integer - kthFromEnd()', () => {
+    let list = new LL();
+    list.append(0);
+    list.append(1);
+    list.append(2);
+    list.append(3);
+    const numberCheck = () =>{
+      list.kthFromEnd('dog');
+    };
+    expect(numberCheck).toThrow('k is invalid, must be a positive integer');
+    const negNum = () =>{
+      list.kthFromEnd(-1);
+    };
+    expect(negNum).toThrow('k is invalid, must be a positive integer');
+    const arrCheck = () =>{
+      list.kthFromEnd([1]);
+    };
+    expect(arrCheck).toThrow('k is invalid, must be a positive integer');
+    const objCheck = () =>{
+      list.kthFromEnd({'int':1});
+    };
+    expect(objCheck).toThrow('k is invalid, must be a positive integer');
+  });
+
+  it('will throw an exception if list is empty - midwayPoint()', () => {
+    let list = new LL();
+    const anError = () =>{
+      list.midwayPoint(5);
+    };
+    expect(anError).toThrow('Empty List');
+  });
+
+  it('will return the value of the midway point of the linked list', () =>{
+    let list = new LL();
+    list.append(0);
+    list.append(1);
+    list.append(2);
+    list.append(3);
+    expect(list.midwayPoint()).toEqual(1);
+    list.append(4);
+    expect(list.midwayPoint()).toEqual(2);
+  });
+  
 });

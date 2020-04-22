@@ -39,10 +39,19 @@ let list = new LL();
 // list.insertAfter(3,'dog');
 // console.log(list.toString());
 
+// list.append(0);
+// list.append(1);
+// list.append(2);
+// list.append(3);
+// console.log(list.toString());
+// list.removeNode(2);
+// console.log(list.toString());
+
 list.append(0);
 list.append(1);
 list.append(2);
 list.append(3);
-console.log(list.toString());
-list.removeNode(2);
-console.log(list.toString());
+list.append(4);
+list.append(5);
+// console.log(list.toString());
+console.log(list.kthFromEnd(8));
