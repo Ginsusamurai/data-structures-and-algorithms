@@ -24,7 +24,7 @@
 - there are some unique states for empty list that return but will be expected for the method called
 - I opted to NOT employ errors but rather handle the states in a manor that is logical for the instance (such as empty list for `toString()` and `includes(val)`
 
-## API
+## Methods
 
 - `insert(val)` will insert a new node at head and append the rest of the list
 - `includes(val)` will return false if no head, traverse list and return true if val is found, false if next node is NULL
@@ -38,4 +38,5 @@
 
 [PR](https://github.com/Ginsusamurai/data-structures-and-algorithms/pull/26)
 
-[linked list notes](/assets/linkedListInserts.jpg)
+![linked list notes](/assets/linkedListInserts.jpg)
+![linked list kthFromEnd](/assets/kthFromEnd.jpg)
