@@ -38,5 +38,5 @@
 
 [PR](https://github.com/Ginsusamurai/data-structures-and-algorithms/pull/26)
 
-![linked list notes](/assets/linkedListInserts.jpg)
-![linked list kthFromEnd](/assets/kthFromEnd.jpg)
+![linked list notes](assets/linkedListInserts.jpg)
+![linked list kthFromEnd](assets/kthFromEnd.jpg)
