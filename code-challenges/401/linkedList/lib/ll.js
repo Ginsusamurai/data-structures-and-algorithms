@@ -33,6 +33,62 @@ class LinkedList {
 
   }
 
+  kthFromEnd(k){
+    let length = 0;
+    let currentNode = this.head;
+    while(currentNode.next !== null){
+      currentNode = currentNode.next;
+      length++;
+    }
+
+    // console.log(this);
+    if (k > length){
+      throw new Error('k is longer than list');
+    }
+    if(k < 0 || isNaN(k) || k.length){
+      throw new Error('k is invalid, must be a positive integer');
+    }
+
+    let target = length - k;
+    let steps = 0;
+    currentNode = this.head;
+    // console.log(currentNode);
+    while(steps < target ){
+      steps++;
+      currentNode = currentNode.next;
+    }
+    return currentNode.value;
+
+  }
+
+  midwayPoint(){
+    let length = 0;
+    let currentNode = this.head;
+
+    if (!currentNode ){
+      throw new Error('Empty List');
+    }
+
+    while(currentNode.next !== null){
+      currentNode = currentNode.next;
+      length++;
+    }
+
+
+
+    let target = Math.floor(length / 2);
+
+    let steps = 0;
+    currentNode = this.head;
+    // console.log(currentNode);
+    while(steps < target ){
+      steps++;
+      currentNode = currentNode.next;
+    }
+    return currentNode.value;
+  }
+
+
   // remove a node with the matching value from the list
   removeNode(value){
     if(this.includes(value)){

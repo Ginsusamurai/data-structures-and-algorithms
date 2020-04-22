@@ -33,6 +33,8 @@
 - `insertBefore(val, newVal)` will add a new node before the indicated val
 - `insertAfter(val, newVal)` will add a new node after the indicated val
 - `removeNode(val)` will remove a node with the indicated val
+- `kthFromEnd(k)` will print the value at the midpoint of the list, rounded down
+- `midwayPoint()` will print the value in the middle of the linked list
 
 [PR](https://github.com/Ginsusamurai/data-structures-and-algorithms/pull/26)
 
