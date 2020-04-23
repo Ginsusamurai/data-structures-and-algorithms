@@ -1,6 +1,7 @@
 'use strict';
 
-const LL = require('../lib/ll.js');
+const LL = require('../lib/ll.js').LinkedList;
+const mergeLists = require('../lib/ll.js').mergeLists;
 
 describe('Linked List module', () => {
   it('constructor should create a list', () => {
@@ -208,4 +209,17 @@ describe('Exceptions errors', () => {
     expect(list.midwayPoint()).toEqual(2);
   });
   
+  it('mergeList(list1,list2) will zipper list2 into list1, alternating 1,2,1,2', () =>{
+    let list1 = new LL();
+    list1.append(1);
+    list1.append(2);
+    list1.append(3);
+
+    let list2 = new LL();
+    list2.append(4);
+    list2.append(5);
+    list2.append(6);
+    list2.append(7);
+    expect(mergeLists(list1, list2).toString()).toEqual('{1} -> {4} -> {2} -> {5} -> {3} -> {6} -> NULL');
+  });
 });

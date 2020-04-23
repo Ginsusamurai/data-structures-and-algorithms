@@ -103,6 +103,7 @@ class LinkedList {
     }
   }
 
+
   // add a new node with the given `newVal`
   // after the first node that matches `value`
   insertAfter(value, newVal){
@@ -191,6 +192,39 @@ class LinkedList {
     return outputString;
   }
 
+
 }
 
-module.exports = LinkedList;
+
+function mergeLists(l1, l2){
+  
+  
+  let list1Current = l1.head;
+  let list2Current = l2.head;
+  let list1Next = new Node();
+  let list2Next = new Node();
+
+  // console.log(first, second);
+
+  while (list1Current !== null || list2Current !== null){
+    
+    
+    
+
+    
+    list1Next = list1Current.next; //a
+    list2Next = list2Current.next; //b
+
+    list1Current.next = list2Current; //c
+    list2Current.next = list1Next;  //d
+
+    list1Current = list1Next;  //e
+    list2Current = list2Next;  //f
+  }
+
+  console.log(l1);
+
+  return l1;
+}
+
+module.exports = {LinkedList, mergeLists};
