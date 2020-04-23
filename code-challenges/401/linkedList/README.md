@@ -36,6 +36,10 @@
 - `kthFromEnd(k)` will print the value at the midpoint of the list, rounded down
 - `midwayPoint()` will print the value in the middle of the linked list
 
+## Functions
+
+- `mergeLists(a,b)` will zipper b into a as 'a,b,a,b'
+
 [PR](https://github.com/Ginsusamurai/data-structures-and-algorithms/pull/26)
 
 
@@ -43,4 +47,8 @@
 ![linked list notes](assets/linkedListInserts.jpg)
 ### kthFromEnd
 ![linked list kthFromEnd](assets/kthFromEnd.jpg)
+### mergeLists
+![mergeLists](assets/mergeLists.jpg)
+
+what is UP!
 
