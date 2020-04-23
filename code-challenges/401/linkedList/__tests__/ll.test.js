@@ -219,7 +219,6 @@ describe('Exceptions errors', () => {
     list2.append(4);
     list2.append(5);
     list2.append(6);
-    list2.append(7);
     expect(mergeLists(list1, list2).toString()).toEqual('{1} -> {4} -> {2} -> {5} -> {3} -> {6} -> NULL');
   });
 });

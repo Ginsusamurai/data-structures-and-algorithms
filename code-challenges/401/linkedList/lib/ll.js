@@ -208,18 +208,14 @@ function mergeLists(l1, l2){
 
   while (list1Current !== null || list2Current !== null){
     
-    
-    
+    list1Next = list1Current.next;
+    list2Next = list2Current.next;
 
-    
-    list1Next = list1Current.next; //a
-    list2Next = list2Current.next; //b
+    list1Current.next = list2Current;
+    list2Current.next = list1Next;
 
-    list1Current.next = list2Current; //c
-    list2Current.next = list1Next;  //d
-
-    list1Current = list1Next;  //e
-    list2Current = list2Next;  //f
+    list1Current = list1Next;
+    list2Current = list2Next;
   }
 
   console.log(l1);
