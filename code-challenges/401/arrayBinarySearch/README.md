@@ -21,7 +21,8 @@ Create a function that takes in 2 parameters (sorted array and search key) and r
 
 
 ## Solution
-[image](./assets/array-binary-search.jpg)
-
 - edge cases
   - non-numeric values can cause infinite loops
+
+![image](./assets/array-binary-search.jpg)
+
