@@ -52,7 +52,7 @@ const citiesAtoJ = (arr) => {
     // console.log(x);
     if(x){
       answers.push(value);
-      
+
     }
   });
   // console.log(answers);
@@ -140,7 +140,7 @@ const seashells = 'She sells seashells by the seashore. The shells she sells are
 const findShells = (str) => {
   let regex = /\b[Ss][a-z]*(ells)\b/g;
   let y = str.match(regex);
-  console.log(y);
+  // console.log(y);
   return y;
 };
 

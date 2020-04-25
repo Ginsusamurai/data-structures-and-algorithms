@@ -197,8 +197,8 @@ class LinkedList {
 
 
 function mergeLists(l1, l2){
-  
-  
+
+
   let list1Current = l1.head;
   let list2Current = l2.head;
   let list1Next = new Node();
@@ -207,7 +207,7 @@ function mergeLists(l1, l2){
   // console.log(first, second);
 
   while (list1Current !== null || list2Current !== null){
-    
+
     list1Next = list1Current.next;
     list2Next = list2Current.next;
 
@@ -218,9 +218,9 @@ function mergeLists(l1, l2){
     list2Current = list2Next;
   }
 
-  console.log(l1);
+  // console.log(l1);
 
   return l1;
 }
 
-module.exports = {LinkedList, mergeLists};
+module.exports = {LinkedList, mergeLists,};

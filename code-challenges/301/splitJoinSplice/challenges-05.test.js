@@ -65,7 +65,7 @@ const gruffaloCrumble = {
     '1 pound baking powder',
     '1 pound cinnamon',
     '6 gallons melted butter',
-    '2 gallons fresh water',
+    '2 gallons fresh water'
   ],
   steps: [
     'Pre-heat a large oven to 375',
@@ -76,8 +76,8 @@ const gruffaloCrumble = {
     'Combine gruffalo compote with water to maintain moisture in the oven',
     'Fold together remaining ingredients to make the crisp',
     'Spread the crisp evenly over the gruffalo mixture',
-    'Bake for 12-15 hours',
-  ]
+    'Bake for 12-15 hours'
+  ],
 };
 
 
@@ -253,20 +253,20 @@ Similarly, extractVowels('The quick brown fox') returns ['Th qck brwn fx', 'eioo
 const extractVowels = (str) => {
   let vowelReg = /[AEIOUaeiou]/;
   const vowelList = [];
-  console.log(str);
-  let holdingStr = str;
+  // console.log(str);
+  // let holdingStr = str;
   while(str.match(vowelReg) !== null){
     //find vowel
     let voweli = str.match(vowelReg).index;
-    console.log('voweli:', voweli);
+    // console.log('voweli:', voweli);
 
     //copy out vowel
     vowelList.push(str.slice(voweli, voweli + 1));
     //remove vowel from string
     str = str.replace(vowelList[vowelList.length - 1], '');
-    console.log(str);
-  };
-  console.log(vowelList);
+    // console.log(str);
+  }
+  // console.log(vowelList);
   vowelList.sort((a,b) =>{
     if(a < b){
       return -1;
