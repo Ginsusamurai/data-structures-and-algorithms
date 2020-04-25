@@ -1,6 +1,6 @@
 'use strict';
 
-const { PerformanceObserver, performance } = require('perf_hooks');
+// const { PerformanceObserver, performance } = require('perf_hooks');
 
 
 function arrayBinarySearch(arr,key){
@@ -25,13 +25,13 @@ function arrayBinarySearch(arr,key){
 }
 
 // make an array of sequential integers of any size, inclusive
-function makeArray(length){
-  let arr = [];
-  for(let x = 1; x <= length; x++){
-    arr.push(x);
-  }
-  return arr;
-}
+// function makeArray(length){
+//   let arr = [];
+//   for(let x = 1; x <= length; x++){
+//     arr.push(x);
+//   }
+//   return arr;
+// }
 
 // let onek = makeArray(1000);
 // // console.log(onek);
