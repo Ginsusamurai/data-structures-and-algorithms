@@ -32,9 +32,9 @@ let list = new LL();
 // console.log(nerp.includes(2));
 
 
-// list.append(0);
-// list.append(1);
-// list.append(2);
+// list.append(0); // 0 -> Null value in list
+// list.append(1); // 0 -> 1 -> Nullin list
+// list.append(2); // 0 -> 1 -> 2 -> Null
 // list.append(3);
 // console.log(list.toString());
 // list.insertAfter(3,'dog');
