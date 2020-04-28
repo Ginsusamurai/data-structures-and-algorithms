@@ -22,6 +22,7 @@
 ## Approach & Efficiency
 
 - all operations should be o(1) and not require any traversal to complete
+- `psuedoqueue` will be O(2n) i *think*. For every object added, you will need to iterate through the existing stack twice to orient the objects correctly in emulate the queue. Stack1 is the master, stack2 is just a temporary holder for the entire stack so that a new item can be put at the bottom of the pile, then have the whole stack flopped back on top of it
 
 
 ## API
