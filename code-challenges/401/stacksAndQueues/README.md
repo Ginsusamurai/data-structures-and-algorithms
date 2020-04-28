@@ -17,6 +17,7 @@
   - `pop` the most recent node off the top
   - `peek` at the top node
   - `isEmpty` returns bool if the stack is empty
+- create a 'psuedoQueue' that acts like a queue but is made up of only stack objects
 
 ## Approach & Efficiency
 
@@ -38,3 +39,10 @@
 - `pop` the most recent node off the top of the stack
 - `peek` at the top node of the stack
 - `isEmpty` returns bool if the stack is empty
+
+### PsuedoQueue
+
+- `enqueue` add a new node to the queue via stack method
+- `dequeue` remove the first added node via stack method
+
+![psuedoqueue](code-challenges/401/stacksAndQueues/assets/psuedoQueue.jpg)
