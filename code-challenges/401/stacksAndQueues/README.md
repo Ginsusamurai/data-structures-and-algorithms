@@ -17,10 +17,12 @@
   - `pop` the most recent node off the top
   - `peek` at the top node
   - `isEmpty` returns bool if the stack is empty
+- create a 'psuedoQueue' that acts like a queue but is made up of only stack objects
 
 ## Approach & Efficiency
 
 - all operations should be o(1) and not require any traversal to complete
+- `psuedoqueue` will be O(2n) i *think*. For every object added, you will need to iterate through the existing stack twice to orient the objects correctly in emulate the queue. Stack1 is the master, stack2 is just a temporary holder for the entire stack so that a new item can be put at the bottom of the pile, then have the whole stack flopped back on top of it
 
 
 ## API
@@ -38,3 +40,10 @@
 - `pop` the most recent node off the top of the stack
 - `peek` at the top node of the stack
 - `isEmpty` returns bool if the stack is empty
+
+### PsuedoQueue
+
+- `enqueue` add a new node to the queue via stack method
+- `dequeue` remove the first added node via stack method
+
+![psuedoqueue](code-challenges/401/stacksAndQueues/assets/psuedoQueue.jpg)
