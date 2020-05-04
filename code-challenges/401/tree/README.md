@@ -1,13 +1,13 @@
 # Trees
-- Create binary trees and binary search trees
+
+- trees are a data structure that is an extension of the concept of a linked list. A tree starts at a `root` and expands out in 2 or more nodes, continually, until eventually terminating in a `leaf` node that has no further children.
+- traversal if often done via recursion to simplify the code and allow easier handling
 
 ## Challenge
-- create a binary search tree that can do the following
-  - `add(value)` a new node
-  - `contains(value)` confirms a value is present in tree
-  - `preOrder()` can return an array of the tree in pre-order (root, left, right)
-  - `inOrder()` return of tree (left, root, right)
-  - `postOrder()` return of tree (left, right, root)
+
+- create a binary search tree that can create, add, and traverse nodes 
+- adhere tot the concentions of `left is lower` and `right is higher`
+- use recursion as possible for optimal design
 
 ## Approach & Efficiency
 
@@ -15,4 +15,9 @@
 - this creats some more overhead in terms of memory I think, as each instance of the function takes up space, but it allows a cleaner traversal and less complicated lines of code (once you understand what it's doing)
 
 ## API
-<!-- Description of each method publicly available in each of your trees -->
+
+- `add(value)` add a new node
+- `contains(value)` confirms a value is present in tree
+- `preOrder()` can return an array of the tree in pre-order (root, left, right)
+- `inOrder()` return of tree (left, root, right)
+- `postOrder()` return of tree (left, right, root)
