@@ -1,0 +1,15 @@
+{
+  "name": "fizzBuzzTree",
+  "version": "1.0.0",
+  "description": "## Challenge Description - write a function to take in a tree - checks each node if divisible by 3/5/both - creates a duplicate tree with swapped values   - fizz = divisible by 3   - buzz = divisible by 5   - fizzbuzz = divisible by both",
+  "main": "fizz-buzz-tree.js",
+  "scripts": {
+    "test": "jest --verbose --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.0.0"
+  }
+}
