@@ -11,3 +11,5 @@ Code Fellows assignment repo for 301 and 401 courses
 1. [stacksAndQueues](/code-challenges/401/stacksAndQueues/)
 1. [fifo_animal_shelter](code-challenges/401/fifo_animal_shelter)
 1. [multi-bracket-validation](code-challenges/401/multiBracketValidation)
+1. [binary tree](code-challenges/401/tree)
+1. [fizzBuzzTree](code-challenges/401/fizzBuzzTree)
