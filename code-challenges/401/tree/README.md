@@ -34,3 +34,8 @@
 - `inOrder()` return of tree (left, root, right)
 - `postOrder()` return of tree (left, right, root)
 - `breadthFirst()` returns values of the tree in level order, left to right
+
+
+## design
+
+![whiteboard](assets/breadthFirst.jpg)
