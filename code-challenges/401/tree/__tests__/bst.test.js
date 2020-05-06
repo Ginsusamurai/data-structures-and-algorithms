@@ -1,7 +1,7 @@
 'use strict';
 
 const BST = require('../tree').bst;
-
+const Node = require('../tree.js').node;
 
 describe('bst test', () => {
 
@@ -86,4 +86,34 @@ describe('bst test', () => {
     expect(bst.contains(7)).toEqual(false);
   })
 
+});
+
+describe('breadth first', () => {
+  it('will return null if no root', () => {
+    let bst = new BST();
+    expect(bst.breadthFirst()).toBeNull();
+  });
+
+  it('will return in level order on balanced tree', () => {
+    let bst = new BST();
+    bst.add(5);
+    bst.add(3);
+    bst.add(7);
+    bst.add(1);
+    bst.add(6);
+    expect(bst.breadthFirst()).toEqual([ 5, 3, 7, 1, 6 ]);
+  });
+
+  it('will return in level order on unbalanced tree', () => {
+    let bst = new BST();
+    let a = new Node(1);
+    let b = new Node(2);
+    let c = new Node(3);
+    let d = new Node('dog');
+    bst.root = a;
+    bst.root.right = b;
+    bst.root.right.right = c;
+    bst.root.right.right.right = d;
+    expect(bst.breadthFirst()).toEqual([1, 2, 3, 'dog']);
+  });
 });

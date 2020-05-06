@@ -130,9 +130,39 @@ class BST {
     return nodeList;
   }
 
+  breadthFirst(){
+    if(this.root === null) return null;
+    const values = [];
+    const queue = [this.root];
+    let front = 0;
+    let current = null;
+    do{
+      current = queue[front];
+      // console.log(current.value);
+      front += 1;
+      if(current.left !== null) queue[queue.length] = current.left;
+      if(current.right !== null) queue[queue.length] = current.right;
+      values[values.length] = current.value;
+    }while(queue.length !== front);
+
+    return values;
+  }
+
 }
 
-module.exports = {bst: BST,};
+module.exports = {bst: BST,node: Node};
+
+// let bst = new BST();
+
+// bst.add(5);
+// bst.add(3);
+// bst.add(7);
+// bst.add(1);
+// bst.add(6);
+// console.log(bst);
+// console.log(bst.breadthFirst());
+
+
 
 
 
