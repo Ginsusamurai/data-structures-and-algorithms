@@ -2,6 +2,7 @@
 
 const BST = require('../tree').bst;
 const Node = require('../tree.js').node;
+const BT = require('../tree.js').bt;
 
 describe('bst test', () => {
 
@@ -84,7 +85,7 @@ describe('bst test', () => {
     expect(bst.contains(4)).toEqual(true);
     expect(bst.contains(6)).toEqual(true);
     expect(bst.contains(7)).toEqual(false);
-  })
+  });
 
 });
 
@@ -115,5 +116,28 @@ describe('breadth first', () => {
     bst.root.right.right = c;
     bst.root.right.right.right = d;
     expect(bst.breadthFirst()).toEqual([1, 2, 3, 'dog']);
+  });
+});
+
+describe('BT find max', () => {
+  it('should return null if no values', () => {
+    let bt = new BT();
+    expect(bt.findMaximumValue()).toBeNull();
+  });
+
+  it('should find the highest values regardless of side', () => {
+    let bt = new BT();
+    let a = new Node(1);
+    let b = new Node(2);
+    let c = new Node(3);
+    let d = new Node(4);
+    bt.root = a;
+    expect(bt.findMaximumValue()).toEqual(1);
+    bt.root.right = b;
+    expect(bt.findMaximumValue()).toEqual(2);
+    bt.root.left = c;
+    expect(bt.findMaximumValue()).toEqual(3);
+    bt.root.right.left = d;
+    expect(bt.findMaximumValue()).toEqual(4);
   });
 });

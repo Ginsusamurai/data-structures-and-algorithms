@@ -11,6 +11,8 @@
 
 - create a `breadthFirst` method to traverse a tree and return the the values in order of level, from left to right
 
+- create a `findMaximumValue` method that will traverse a binary tree and find the maximum value. 
+
 ## Approach & Efficiency
 
 - recursive functions are the cleanest way to to do this. i had to look at some examples before I started to figure out how they work exactly, with creating a massive stack and then peeling it back apart as each instance on the stack resolves.
@@ -26,6 +28,10 @@
 - time O(n) as it has to traverse the entire array once.
 - space O(2n) as you need a copy of each node stores in memory to work on in the queue.
 
+- `findMaximumValue` can't use built in methods
+  - does a standard traversal, same as pre/in/post-order but has a variable `max` that holds the current maximum value, compared at each node
+  - since this needs to traverse the entire array in the event that it is a binary tree, and not a binary search tree, the search is O(n)
+
 ## API
 
 - `add(value)` add a new node
@@ -38,4 +44,8 @@
 
 ## design
 
+### Breadth First
 ![whiteboard](assets/breadthFirst.jpg)
+
+### Max Value
+![whiteboard](assets/findMaximumValue.jpg)
