@@ -15,3 +15,4 @@ Code Fellows assignment repo for 301 and 401 courses
 1. [fizzBuzzTree](code-challenges/401/fizzBuzzTree)
 1. [breadthFirst](code-challenges/401/tree)
 1. [findMaxValue](code-challenges/401/tree)
+1. [insertionSort](code-challenges/401/sort)
