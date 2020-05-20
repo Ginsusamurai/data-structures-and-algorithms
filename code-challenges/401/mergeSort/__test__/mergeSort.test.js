@@ -46,11 +46,8 @@ describe('merge sort tests', () => {
       info: jest.fn(),
       error: jest.fn()
     }
-
     let x = [8,4,23,42,16,15];
     mergeSort(x);
     expect(global.console.log).toHaveBeenCalledTimes(5);
-    console.error('***', global.console);
-
   })
 })

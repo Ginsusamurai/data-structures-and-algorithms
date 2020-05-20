@@ -34,7 +34,8 @@ ALGORITHM Merge(left, right, arr)
        set remaining entries in arr to remaining values in left
 ```
 
-summary:
+## summary:
+
 1. if the provided array has more than 1 value, bisect it
   1. left half and right half both include the middle value
   1. run the left half and right half through this same splitter again (recursive function)
@@ -47,3 +48,9 @@ summary:
     1. increment array pointer
   1. if the left pointer is at the end, populate the rest of the array with the values in right
   1. else, populate array with rest of values in left
+
+- Important Note: the primary conceit of this is that it breaks down any length of array in to chunks of 2 values that are then sorted, then everything is stitched back together, bit by bit, until the final array is complete
+
+## visual
+
+![array1](/assets/array1.jpg)
