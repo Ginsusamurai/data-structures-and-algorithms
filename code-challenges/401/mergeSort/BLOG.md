@@ -51,6 +51,11 @@ ALGORITHM Merge(left, right, arr)
 
 - Important Note: the primary conceit of this is that it breaks down any length of array in to chunks of 2 values that are then sorted, then everything is stitched back together, bit by bit, until the final array is complete
 
+## Approach and Efficiency
+
+- while this seems very inefficient, there actually aren't any additional loops that the function goes through so the time complexity is low
+- at any given time there is only a minimal amount of the array being acted upon so that, provided you know where you are in the array, you only have 2 items to compare
+
 ## visual
 
 ![array1](/assets/array1.jpg)
