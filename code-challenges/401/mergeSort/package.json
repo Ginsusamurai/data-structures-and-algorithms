@@ -1,0 +1,15 @@
+{
+  "name": "mergeSort",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mergeSort.js",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^26.0.1"
+  }
+}

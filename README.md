@@ -16,3 +16,4 @@ Code Fellows assignment repo for 301 and 401 courses
 1. [breadthFirst](code-challenges/401/tree)
 1. [findMaxValue](code-challenges/401/tree)
 1. [insertionSort](code-challenges/401/sort)
+1. [mergeSort](code-challenges/401/mergeSort)
