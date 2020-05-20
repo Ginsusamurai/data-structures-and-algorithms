@@ -36,18 +36,18 @@ ALGORITHM Merge(left, right, arr)
 
 ## summary:
 
-1. if the provided array has more than 1 value, bisect it
-  1. left half and right half both include the middle value
-  1. run the left half and right half through this same splitter again (recursive function)
-  1. merge the completed values in to the original array
-1. Merge function >
-  1. create pointers for left, right, and output arrays
-  1. while the left and right pointers are valid...
-    1. if left value is < right value, output to array, increment left pointer
-    1. else populate array and increment right pointer
-    1. increment array pointer
-  1. if the left pointer is at the end, populate the rest of the array with the values in right
-  1. else, populate array with rest of values in left
+- if the provided array has more than 1 value, bisect it
+  - left half and right half both include the middle value
+  - run the left half and right half through this same splitter again (recursive function)
+  - merge the completed values in to the original array
+- Merge function >
+  - create pointers for left, right, and output arrays
+  - while the left and right pointers are valid...
+    - if left value is < right value, output to array, increment left pointer
+    - else populate array and increment right pointer
+    - increment array pointer
+  - if the left pointer is at the end, populate the rest of the array with the values in right
+  - else, populate array with rest of values in left
 
 - Important Note: the primary conceit of this is that it breaks down any length of array in to chunks of 2 values that are then sorted, then everything is stitched back together, bit by bit, until the final array is complete
 
