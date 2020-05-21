@@ -58,4 +58,4 @@ ALGORITHM Merge(left, right, arr)
 
 ## visual
 
-![array1](/assets/array1.jpg)
+![array1](assets/array1.jpg)
