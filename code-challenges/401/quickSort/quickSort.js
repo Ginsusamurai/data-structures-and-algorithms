@@ -42,6 +42,6 @@ function Swap(arr, first, last){
 }
 
 
-let x = [8,4,23,42,16,15];
+// let x = [8,4,23,42,16,15];
 
-console.log(quickSort(x, 0, x.length - 1));
+// console.log(quickSort(x, 0, x.length - 1));
