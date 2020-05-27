@@ -20,3 +20,4 @@
 - Size => O(2n). each word in the string needs to be maintained for comparison later on so this is unavoidable. Comparing just the char values is not sufficient as ordering of characters can become important
 - I had to build the hashmap structure from scratch including node and linked lists and then find a non-method way of splitting the words out and setting them in the hashmap. The only step I didn't successfully manage was casting to lower case. Everything else is done long-form without methods.
 
+![repeateWord](assets/repeatWord.jpg)
