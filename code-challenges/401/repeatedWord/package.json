@@ -1,0 +1,15 @@
+{
+  "name": "repeatedWord",
+  "version": "1.0.0",
+  "description": "- Write a function that accepts a lengthy string - without built-in methods, return the first word to occure more than once in the string",
+  "main": "repeated-word.js",
+  "scripts": {
+    "test": "jest --verbose --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^26.0.1"
+  }
+}
