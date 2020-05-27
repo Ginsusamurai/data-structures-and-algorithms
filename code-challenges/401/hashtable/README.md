@@ -3,12 +3,12 @@
 ## Challenge
 
 - With vanilla JS, create a functioniong hashtable class that covers several test cases
-[x] Adding a key/value to your hashtable results in the value being in the data structure
-[x] Retrieving based on a key returns the value stored
-[x] Successfully returns null for a key that does not exist in the hashtable
-[x] Successfully handle a collision within the hashtable
-[x] Successfully retrieve a value from a bucket within the hashtable that has a collision
-[x] Successfully hash a key to an in-range value
+- [X] Adding a key/value to your hashtable results in the value being in the data structure
+- [X] Retrieving based on a key returns the value stored
+- [X] Successfully returns null for a key that does not exist in the hashtable
+- [X] Successfully handle a collision within the hashtable
+- [X] Successfully retrieve a value from a bucket within the hashtable that has a collision
+- [X] Successfully hash a key to an in-range value
 
 ## Approach & Efficiency
 
