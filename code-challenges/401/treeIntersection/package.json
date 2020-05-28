@@ -1,0 +1,15 @@
+{
+  "name": "treeIntersection",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tree-intersection.js",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^26.0.1"
+  }
+}
