@@ -1,0 +1,15 @@
+{
+  "name": "leftJoin",
+  "version": "1.0.0",
+  "description": "## Challenge",
+  "main": "left-join.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^26.0.1"
+  }
+}

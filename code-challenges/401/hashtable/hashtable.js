@@ -39,7 +39,8 @@ class Hashmap {
     if(this.storage[hash] === null){
       return null;
     }else{
-      return this.storage[hash].contains(key);
+      // return this.storage[hash].contains(key);
+      return true;
     }
   }
 }

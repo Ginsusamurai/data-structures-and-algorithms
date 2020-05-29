@@ -21,3 +21,4 @@ Code Fellows assignment repo for 301 and 401 courses
 1. [hashtable](code-challenges/401/hashtable)
 1. [repeatWord](code-challenges/401/repeatWord)
 1. [tree intersection](code-challenges/401/treeIntersection)
+1. [leftJoin](code-challenges/401/leftJoin)
